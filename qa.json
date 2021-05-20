@@ -1,0 +1,136 @@
+[
+	{
+		"questions": [
+			{
+				"Who is this checkup for?": ["myself", "someone else"],
+				"scores": ["0", "0"]
+			},
+			{
+				"What is your sex?": ["female", "male"],
+				"scores": ["0", "0"]
+			},
+			{
+				"Enter age:": [],
+				"scores": []
+			},
+			{
+				"Respond to the upcoming questions with 1,2 or 3 based on the situation": [],
+				"scores": [],
+				"skippable": true
+			},
+			{
+				"Facing overweight or obese?": ["yes", "no", "I don't know"],
+				"scores": ["2.5", "0", "1"]
+			},
+			{
+				"Practise of smoking or any other tobacco intake?": ["yes", "no", "I don't know"],
+				"scores": ["2.5", "0", "1"]
+			},
+			{
+				"High cholesterol levels?": ["yes", "no", "I don't know"],
+				"scores": ["2.5", "0", "1"]
+			},
+			{
+				"I have hypertension": ["yes", "no", "I don't know"],
+				"scores": ["2.5", "0", "1"]
+			},
+			{
+				"do u have the following  symptoms?": [],
+				"scores": [],
+				"skippable": true
+			},
+			{
+				"Fatigue": ["yes", "no"],
+				"scores": ["5", "0"]
+			},
+			{
+				"Fever": ["yes", "no"],
+				"scores": ["5", "0"]
+			},
+			{
+				"Shortness of breath": ["yes", "no"],
+				"scores": ["5", "0"]
+			},
+			{
+				"Muscle pain": ["yes", "no"],
+				"scores": ["5", "0"]
+			},
+			{
+				"Chills": ["yes", "no"],
+				"scores": ["5", "0"]
+			},
+			{
+				"Diminshed appetite": ["yes", "no"],
+				"scores": ["5", "0"]
+			},
+			{
+				"Have you had close  contact with a person postive for covid19 or waiting for thier result in the past 14 days?": [
+					"direct contact with that person",
+					"direct contact with that person within 3ft for not longer than 15mins",
+					"none of the above"
+				],
+				"scores": ["10", "5", "0"]
+			},
+			{
+				"What is your experince with shortness of breath(if you have it)?": [
+					"it worsened within the last hour",
+					"it started a day ago",
+					"it started more than a day ago",
+					"none"
+				],
+				"scores": ["5", "7.5", "10","0"]
+			},
+			{
+				"How would u describe the severity of your breathing diffculty?": [
+					"sever",
+					"moderate",
+					"mild",
+					"none"
+				],
+				"scores": ["10", "7.5", "5", "0"]
+			},
+			{
+				"Do you have cough, if you do describe your cough?": [
+					"dry cough without phlegm or mucus",
+					"wet cough with phlem or mucus",
+					"dry and wet",
+					"no cough"
+				],
+				"scores": ["10", "7.5", "10", "0"]
+			},
+			{
+				"Do you experince the following?": [],
+				"scores": [],
+				"skippable": true
+			},
+			{
+				"Sense of taste is lost": ["yes", "no", "I don't know"],
+				"scores": ["5", "0", "1"]
+			},
+			{
+				"Sense of smell is lost?": ["yes", "no", "I don't know"],
+				"scores": ["5", "0", "1"]
+			},
+			{
+				"Do you feel weakness in ur muscles": ["yes", "no", "I don't know"],
+				"scores": ["5", "0", "1"]
+			},
+			{
+				"Do you have chills?": ["yes", "no", "I don't know"],
+				"scores": ["5", "0", "1"]
+			},
+			{
+				"Does your throat or nose itch or feel tingly?": ["yes", "no", "I don't know"],
+				"scores": ["5", "0", "1"]
+			},
+			{
+				"temperature reading(optional)": [],
+				"scores": []
+			},
+			{
+				"oximeter reading(optional)": [],
+				"scores": []
+			}
+		]
+	}
+]

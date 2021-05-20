@@ -1,0 +1,100 @@
+covid19 chatbot test questions #range out of 115pts. 30pts below is safe with home treatment. 30-70 you are at risk go for a test you have the symptons of covid19. 70+ you are at high risk go immediately for the test 
+
+1.who is the checkup for?
+a.myself
+b.someone else
+
+2.what is your sex?
+a.female
+b.male
+
+3.how old are you? 
+*input age range 1-120*  #0-60 0pts 60+ 10pts#
+
+4.please cheack all the statement below that apply to you. #10pts total#
+
+im overweight or obese #yes 2.5pts no 0pts#
+.yes #2.5
+.no
+.dont know
+
+i smoke cigarettes #yes 2.5pts no 0pts#
+.yes #2.5
+.no
+.dont know
+
+i have high cholesterol #yes 2.5pts no 0pts#
+
+.yes #2.5
+.no
+.dont know
+
+i have hypertension #yes 2.5pts no 0pts#
+.yes #2.5
+.no
+.dont know
+
+5. do u have the following  symptoms?#out of 30pts check box
+.fatigue #5
+.fever #5
+.shortness of breath #5
+.muscle pain #5
+.chills #5
+.diminshed appetite #5
+
+6.have you had close  contact with a person postive for covid19 or waiting for thier result in the past 14 days? #out of 10pts
+.direct contact with that person #10
+.direct contact with that person within 3ft for not longer than 15mins #5
+.none of the above #0
+
+7. what is your experince with shortness of breath(if you have it)? #out of 10pts
+.it worsened within the last hour #5
+.it started a day ago #7.5
+.it started more than a day ago #10
+.none #0
+
+8.how would u describe the severity of your breathing diffculty? #out of 10pts
+.sever #10
+.moderate #7.5
+.mild #5
+.none #0
+
+9.do you have cough, if you do describe your cough? #out of 10pts
+.dry cough without phlegm or mucus #10
+.wet cough with phlem or mucus #7.5
+.dry and wet #10
+.no cough #0
+
+10.do you experince the following? #out of 25
+
+sense of taste is lost
+.yes #5
+. no
+.dont know
+
+sense of smell is lost?
+.yes #5
+.no
+.dont know
+
+do you feel weakness in ur muscles
+.yes #5
+.no
+.dont know
+
+do you have chills?
+.yes #5
+.no
+.dont know
+
+does your throat or nose itch or feel tingly?
+.yes #5
+.no
+.dont know
+
+11.temperature reading(optional)
+*input temperature*
+
+12. oximeter reading(optional)
+*input oxireading* 
+  
