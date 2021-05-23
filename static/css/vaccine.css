@@ -1,0 +1,215 @@
+:root {
+    --brand: #fee715ff;
+    --greenA: #2aff2a;
+    --redA: #da2d2d;
+    --bdDarkPrimary: #101820ff;
+    --bdDarkSecondary: rgb(36, 36, 36);
+    --textWhite:#fff;
+    --textDark:#333;
+  }
+
+  @font-face {
+    font-family: "Gilroy";
+    src: url(./Gilroy-Regular.woff) format(woff);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    background-color: var(--bdDarkPrimary);
+  }
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: var(--bdDarkSecondary);
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a,#brand {
+    float: right;
+    margin-right: 3vw;
+    font-size: 16px;
+    color: var(--textWhite);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #brand {
+      margin-left: 1vw;
+      align-items: center;
+      width: 10vw;
+    float: left;
+    color: var(--bdDarkPrimary);
+    background-color: var(--brand);
+  }
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: var(--bdDarkPrimary);
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--brand);
+    color: var(--bdDarkPrimary)
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bdDarkSecondary);
+    min-width: 15vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    width: 100%;
+    color: var(--textWhite);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .drop_down_states,#district_text{
+    width: 360px;
+    height: 25px;
+  
+    border-radius: 12px solid var(--textWhite);
+  
+    background-color: transparent;
+    color: var(--textWhite);
+    margin-left: 6vw;
+    padding-left: 15px;
+  
+    font-size: 1.1em;
+  }
+
+  .drop_down_states option{
+      background-color: var(--bdDarkPrimary);
+
+  }
+  
+#data,#fdata{
+      background-color: var(--bdDarkSecondary);
+      color: var(--textWhite);
+      height: 50vh;
+      overflow-y: scroll;
+      
+}
+.table{
+    margin-left: 6vw;
+    padding: 1rem;
+}
+#data td,#fdata td{
+    padding: 0.5rem;
+    min-width: 8vw;
+}
+
+tr:nth-child(even){
+    background-color: rgb(44, 44, 44);
+}
+.tableDiv{
+    display: flex;
+    max-height: 50vh;
+    overflow-y: scroll;
+    width: 30vw;
+}
+
+/* SCROLL BAR */
+.tableDiv::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .tableDiv::-webkit-scrollbar-track {
+    background: var(--bdDarkPrimary);
+  }
+  
+  /* Handle */
+  .tableDiv::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+  }
+  
+  /* Handle on hover */
+  .tableDiv::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+  #div2{
+      width: 40vw;
+      margin-top: 2vh;
+  }
+
+  #intro{
+    font-size: 6vh;
+    margin-left: 4vw;
+    padding:1vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    color: var(--brand);
+  }
+  #question{
+      font-size: 4vh;
+      margin-left: 6vw;
+      margin-top: 2vh;
+      margin-bottom: 1vh;
+      color: var(--textWhite);
+  }
+  #vacc_button{
+      background-color: var(--brand);
+      color: var(--textDark);
+      padding: 10px;
+      border:none;
+      border-radius: 12px;
+      margin-left: 2vw;
+      margin-top: 1vw;
+      font-size: 1rem;
+  }
+  #vacc_button:hover{
+      background-color: rgb(255, 208, 0);
+  }
+
+  @media screen and (max-width:580px) {
+      .tableDiv{
+          width: 80vw;
+      }
+  }

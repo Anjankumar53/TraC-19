@@ -1,0 +1,314 @@
+:root {
+  --brand: rgb(238, 254, 21);
+  --greenA: #2aff2a;
+  --redA: #da2d2d;
+  --bdDarkPrimary: rgb(16, 27, 39);
+  --bdDarkSecondary: rgb(36, 36, 36);
+  --textWhite:#fff;
+  --textDark:#333;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(./Gilroy-Regular.woff) format(woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: var(--bdDarkPrimary);
+}
+.hide {
+  display: none;
+}
+.fadeIn {
+  animation: fade 0.5s ease-in-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.stats {
+  width: 100%;
+  background-color: var(--bdDarkPrimary);
+  background-size: cover;
+}
+.latest-report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  color: var(--textWhite);
+}
+
+.country,
+.total-cases,
+.recovered,
+.deaths {
+  height: 100px;
+}
+
+.name {
+  font-size: 2.2em;
+  color: var(--brand);
+  font-weight: bold;
+}
+
+.change-country {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.3em;
+}
+.total-cases .value {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--brand);
+}
+.recovered .value {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--greenA);
+}
+.deaths .value {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--redA);
+}
+.new-value {
+  font-size: 1.3em;
+}
+
+.chart {
+  width: 80%;
+  height: 70vh;
+  min-height: 500px;
+  background-color: var(--bdDarkSecondary);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* -------- SEARCH COUNTRY -------- */
+.search-country {
+  position: relative;
+  top: 10px;
+}
+.search-box {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 400px;
+  height: 30px;
+
+  background-color: var(--bdDarkSecondary);
+
+  z-index: 1;
+}
+.search-box input {
+  width: 360px;
+  height: 25px;
+
+  border: none;
+
+  background-color: transparent;
+  color: var(--textWhite);
+
+  padding-left: 15px;
+
+  font-size: 1.1em;
+}
+.search-box img {
+  width: 20px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.country-list {
+  display: flex;
+
+  position: absolute;
+  top: 30px;
+
+  width: 400px;
+  height: 300px;
+
+  background-color: var(--bdDarkSecondary);
+  opacity: 0.9;
+
+  overflow-y: scroll;
+}
+
+.country-list ul {
+  width: 100%;
+}
+
+.country-list ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--textWhite);
+}
+.country-list ul li:hover {
+  border-left: 1px solid var(--textWhite);
+}
+/* SCROLL BAR */
+.country-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.country-list::-webkit-scrollbar-track {
+  background: var(--bdDarkSecondary);
+}
+
+/* Handle */
+.country-list::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+.country-list::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+@media screen and (max-width: 600px) {
+  .latest-report {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+.video-wrap {
+  margin-top: 1vh;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  align-items: center;
+}
+.video-wrap iframe {
+  margin-left: 10vw;
+  min-width: 80vw;
+  min-height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .video-wrap {
+    height: 50vh;
+    overflow: hidden;
+    width: 90vw;
+  }
+  .video-wrap iframe {
+    height: 50vh;
+    margin-left: 0;
+    width: 90vw;
+    overflow: hidden;
+  }
+}
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: var(--bdDarkSecondary);
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a,#brand {
+  float: right;
+  margin-right: 3vw;
+  font-size: 16px;
+  color: var(--textWhite);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#brand {
+  margin-left: 1vw;
+  align-items: center;
+  width: 10vw;
+  float: left;
+  color: var(--bdDarkPrimary);
+  background-color: var(--brand);
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  content: "|||";
+      transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: var(--bdDarkPrimary);
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: var(--brand);
+  color: var(--bdDarkPrimary)
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--bdDarkSecondary);
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  width: 100%;
+  color: var(--textWhite);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
