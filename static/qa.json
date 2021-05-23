@@ -1,12 +1,12 @@
 [
 	{
-		"questions": [
+		"Questions": [
 			{
-				"Who is this checkup for?": ["myself", "someone else"],
+				"Who is this checkup for?": ["Myself", "Someone else"],
 				"scores": ["0", "0"]
 			},
 			{
-				"What is your sex?": ["female", "male"],
+				"What is your gender?": ["Female", "Male"],
 				"scores": ["0", "0"]
 			},
 			{
@@ -14,87 +14,87 @@
 				"scores": []
 			},
 			{
-				"Respond to the upcoming questions with 1,2 or 3 based on the situation": [],
+				"Respond to the upcoming questions with 1, 2, or 3 based on the situation": [],
 				"scores": [],
 				"skippable": true
 			},
 			{
-				"Facing overweight or obese?": ["yes", "no", "I don't know"],
+				"Facing overweight or obese?": ["Yes", "No", "I don't know"],
 				"scores": ["2.5", "0", "1"]
 			},
 			{
-				"Practise of smoking or any other tobacco intake?": ["yes", "no", "I don't know"],
+				"Practise of smoking or any other tobacco intake?": ["Yes", "No", "I don't know"],
 				"scores": ["2.5", "0", "1"]
 			},
 			{
-				"High cholesterol levels?": ["yes", "no", "I don't know"],
+				"High cholesterol levels?": ["Yes", "No", "I don't know"],
 				"scores": ["2.5", "0", "1"]
 			},
 			{
-				"I have hypertension": ["yes", "no", "I don't know"],
+				"I have hypertension": ["Yes", "No", "I don't know"],
 				"scores": ["2.5", "0", "1"]
 			},
 			{
-				"do u have the following  symptoms?": [],
+				"Do you have the following  symptoms?": [],
 				"scores": [],
 				"skippable": true
 			},
 			{
-				"Fatigue": ["yes", "no"],
+				"Fatigue?": ["Yes", "No"],
 				"scores": ["5", "0"]
 			},
 			{
-				"Fever": ["yes", "no"],
+				"Presence of Fever/high body temperature": ["Yes", "No"],
 				"scores": ["5", "0"]
 			},
 			{
-				"Shortness of breath": ["yes", "no"],
+				"Shortness of breath": ["Yes", "No"],
 				"scores": ["5", "0"]
 			},
 			{
-				"Muscle pain": ["yes", "no"],
+				"Muscle or joint pain": ["Yes", "No"],
 				"scores": ["5", "0"]
 			},
 			{
-				"Chills": ["yes", "no"],
+				"Chills": ["Yes", "No"],
 				"scores": ["5", "0"]
 			},
 			{
-				"Diminshed appetite": ["yes", "no"],
+				"Diminshed appetite": ["Yes", "No"],
 				"scores": ["5", "0"]
 			},
 			{
-				"Have you had close  contact with a person postive for covid19 or waiting for thier result in the past 14 days?": [
-					"direct contact with that person",
-					"direct contact with that person within 3ft for not longer than 15mins",
-					"none of the above"
+				"Have you had close contact with a person postive for COVID-19 or are awaiting their result in the past 14 days?": [
+					"Direct contact with that person",
+					"Direct contact with that person within 3ft for not longer than 15 min",
+					"None of the above"
 				],
 				"scores": ["10", "5", "0"]
 			},
 			{
-				"What is your experince with shortness of breath(if you have it)?": [
-					"it worsened within the last hour",
-					"it started a day ago",
-					"it started more than a day ago",
-					"none"
+				"What is your experince with shortness of breath(if applicable)?": [
+					"Tt worsened within the last hour",
+					"It started a day ago",
+					"Tt started more than a day ago",
+					"None"
 				],
 				"scores": ["5", "7.5", "10","0"]
 			},
 			{
-				"How would u describe the severity of your breathing diffculty?": [
-					"sever",
-					"moderate",
-					"mild",
-					"none"
+				"How would you describe the severity of your breathing diffculty?": [
+					"Sever",
+					"Moderate",
+					"Mild",
+					"None"
 				],
 				"scores": ["10", "7.5", "5", "0"]
 			},
 			{
-				"Do you have cough, if you do describe your cough?": [
-					"dry cough without phlegm or mucus",
-					"wet cough with phlem or mucus",
-					"dry and wet",
-					"no cough"
+				"Describe your cough (if applicable)": [
+					"Dry cough without phlegm or mucus",
+					"Wet cough with phlem or mucus",
+					"Dry and wet",
+					"No cough"
 				],
 				"scores": ["10", "7.5", "10", "0"]
 			},
@@ -104,31 +104,31 @@
 				"skippable": true
 			},
 			{
-				"Sense of taste is lost": ["yes", "no", "I don't know"],
+				"Sense of taste is lost": ["Yes", "No", "I don't know"],
 				"scores": ["5", "0", "1"]
 			},
 			{
-				"Sense of smell is lost?": ["yes", "no", "I don't know"],
+				"Sense of smell is lost": ["Yes", "No", "I don't know"],
 				"scores": ["5", "0", "1"]
 			},
 			{
-				"Do you feel weakness in ur muscles": ["yes", "no", "I don't know"],
+				"Weakness in muscles": ["Yes", "No", "I don't know"],
 				"scores": ["5", "0", "1"]
 			},
 			{
-				"Do you have chills?": ["yes", "no", "I don't know"],
+				"Do you have chills?": ["Yes", "No", "I don't know"],
 				"scores": ["5", "0", "1"]
 			},
 			{
-				"Does your throat or nose itch or feel tingly?": ["yes", "no", "I don't know"],
+				"Does your throat or nose itch or feel tingly?": ["Yes", "No", "I don't know"],
 				"scores": ["5", "0", "1"]
 			},
 			{
-				"temperature reading(optional)": [],
+				"Temperature reading (optional):": [],
 				"scores": []
 			},
 			{
-				"oximeter reading(optional)": [],
+				"Xximeter reading (optional):": [],
 				"scores": []
 			}
 		]
