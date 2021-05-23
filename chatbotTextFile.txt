@@ -1,5 +1,5 @@
 covid19 chatbot test questions #range out of 115pts. 30pts below is safe with home treatment. 30-70 you are at risk go for a test you have the symptons of covid19. 70+ you are at high risk go immediately for the test 
-
+//
 1.who is the checkup for?
 a.myself
 b.someone else
