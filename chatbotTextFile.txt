@@ -7,6 +7,7 @@ b.someone else
 2.what is your sex?
 a.female
 b.male
+c.other
 
 3.how old are you? 
 *input age range 1-120*  #0-60 0pts 60+ 10pts#
