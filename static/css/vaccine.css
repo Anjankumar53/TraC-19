@@ -141,7 +141,7 @@
     padding: 1rem;
 }
 #data td,#fdata td{
-    padding: 0.5rem;
+    padding: 1rem;
     min-width: 8vw;
 }
 
@@ -156,32 +156,34 @@ tr:nth-child(even){
 }
 
 /* SCROLL BAR */
-.tableDiv::-webkit-scrollbar {
+.tableDiv::-webkit-scrollbar,.drop_down_states::-webkit-scrollbar {
     width: 10px;
   }
   
   /* Track */
-  .tableDiv::-webkit-scrollbar-track {
+  .tableDiv::-webkit-scrollbar-track ,.drop_down_states::-webkit-scrollbar-track{
     background: var(--bdDarkPrimary);
   }
   
   /* Handle */
-  .tableDiv::-webkit-scrollbar-thumb {
+  .tableDiv::-webkit-scrollbar-thumb ,.drop_down_states::-webkit-scrollbar-thumb{
     background: #f1f1f1;
   }
   
   /* Handle on hover */
-  .tableDiv::-webkit-scrollbar-thumb:hover {
+  .tableDiv::-webkit-scrollbar-thumb:hover ,.drop_down_states::-webkit-scrollbar-thumb:hover{
     background: #fff;
   }
   #div2{
-      width: 40vw;
+      width: 50vw;
       margin-top: 2vh;
+      margin-left: 4vw;
   }
 
   #intro{
+    width: 100%;
+    text-align: center;
     font-size: 6vh;
-    margin-left: 4vw;
     padding:1vw;
     margin-top: 2vh;
     margin-bottom: 1vh;
@@ -213,3 +215,23 @@ tr:nth-child(even){
           width: 80vw;
       }
   }
+  #options{
+    padding-left: 4vw;
+  }
+
+  .grid2{
+    margin-top: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+  }
+
+  #image{
+    width: 35vw;
+    margin-top: 2vh;
+  }
+  #district_text{
+    margin-left: 10vw;
+    margin-top: 4vh;
+  }
+  

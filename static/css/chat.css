@@ -64,10 +64,24 @@
     scroll-behavior: smooth;
     hyphens: auto;
 }
-
-.chat-container::-webkit-scrollbar {
-    display: none;
-}
+.full-chat-block::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .full-chat-block::-webkit-scrollbar-track {
+    background: rgb(141, 141, 141);
+  }
+  
+  /* Handle */
+  .full-chat-block::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+  }
+  
+  /* Handle on hover */
+  .full-chat-block::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
 
 .chat-bar-input-block {
     display: flex;

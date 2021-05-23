@@ -24,9 +24,9 @@ function getdistrictdata() {
 
 function getTime() {
     console.log("getTime")
-    let today = new Date()
-    var date = today.getDate() + 1
-    var month = today.getMonth()
+    let today = new Date(Date.now())
+    var date = today.getDate()+1
+    var month = today.getMonth()+1
     var year = today.getFullYear()
 
     let time = date + "-" + month + "-" + year
@@ -53,15 +53,49 @@ function getvaccinedata() {
                     document.getElementById("fdata").innerHTML = temp;
 
                 }
+                else{
+                    temp += "<tr>";
+                    temp += "<td>" + "NO data"+ "</td>";
+                    temp += "<td>" +"" + "</td>";
+                    document.getElementById("fdata").innerHTML = temp;
+
+                }
             });
         }
     );
 }
 function scam(){
-    var temp
-    temp += "<tr>";
-    temp = "<td>" + "scam"+ "</td>";
-    temp += "<td>" + "scam"+ "</td>";
-    temp += "<td>" + "scam"+ "</td>";
-    document.getElementById("fdata").innerHTML = temp;
+    var temp=""
+    district_id=document.getElementById("district_text").value
+    if(district_id==265 || district_id==276){
+        temp += "<tr>";
+        temp += "<td>" + "Bowring medical college"+ "</td>";
+        temp += "<td>" +"9036304558" + "</td>";
+        document.getElementById("fdata").innerHTML = temp;
+        temp += "<tr>";
+        temp += "<td>" + "Victoria Hospital"+ "</td>";
+        temp += "<td>" +"080-26701150" + "</td>";
+        document.getElementById("fdata").innerHTML = temp;
+        temp += "<tr>";
+        temp += "<td>" + "Command hospital"+ "</td>";
+        temp += "<td>" +"-" + "</td>";
+        document.getElementById("fdata").innerHTML = temp;
+        temp += "<tr>";
+        temp += "<td>" + "RajRajeshwari  medical college"+ "</td>";
+        temp += "<td>" +"080-28437444" + "</td>";
+        document.getElementById("fdata").innerHTML = temp;
+    } 
+    else if(district_id==270){
+        temp=""
+        temp += "<tr>";
+        temp += "<td>" + "District Hospital"+ "</td>";
+        temp += "<td>" +"080-236260" + "</td>";
+        document.getElementById("fdata").innerHTML = temp;
+    }
+    else {
+        temp += "<tr>";
+        temp += "<td>" + "NO data"+ "</td>";
+        temp += "<td>" +"" + "</td>";
+        document.getElementById("fdata").innerHTML = temp;
+    }
 }

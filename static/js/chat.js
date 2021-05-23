@@ -42,10 +42,10 @@
 	// Gets the first message
 	function firstBotMessage() {
 		let firstMessage =
-			'Hello there!!\nPlease answer the following questions to analyse your current medical situation'
+			'Hello there &#128512 !!\nPlease answer the following questions to analyse your current medical situation'
+		let secondMessage="Answer the questions with the suitable option numbers"
 		document.getElementById('botStarterMessage').innerHTML =
-			'<p class="botText"><span>' + firstMessage + '</span></p>'
-
+			'<p class="botText"><span>' + firstMessage + '</span></p><br><p class="botText"><span>' + secondMessage + '</span></p>'
 		let time = getTime()
 
 		$('#chat-timestamp').append(time)
