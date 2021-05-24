@@ -1,6 +1,6 @@
 [
 	{
-		"Questions": [
+		"questions": [
 			{
 				"Who is this checkup for?": ["Myself", "Someone else"],
 				"scores": ["0", "0"]
@@ -128,7 +128,7 @@
 				"scores": []
 			},
 			{
-				"Xximeter reading (optional):": [],
+				"Oximeter reading (optional):": [],
 				"scores": []
 			}
 		]
