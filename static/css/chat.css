@@ -1,10 +1,11 @@
-.root {
-    --brand: #faa913;
-    --bdDarkPrimary: rgb(14, 14, 14);
-    --bdDarkSecondary: rgb(36, 36, 36);
-    --textWhite:#fff;
-    --textDark:#333;
-  }
+:root {
+    --brand: rgb(255, 146, 5);
+    --bdDarkPrimary: rgb(255, 255, 255);
+    --orangeBg:rgb(255, 184, 51);
+    --bdDarkSecondary: #505050;
+    --textWhite:rgb(255, 255, 255);
+    --textDark:rgb(255, 255, 255);
+}
 
 .chat-bar-collapsible {
     position: fixed;
@@ -90,7 +91,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 170, 42);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
@@ -128,7 +129,7 @@
 }
 
 .userText {
-    color: white;
+    color:#333;
     font-family: Helvetica;
     font-size: 16px;
     font-weight: normal;
@@ -139,7 +140,7 @@
 .userText span {
     line-height: 1.5em;
     display: inline-block;
-    background: var(--bdDarkPrimary);
+    background-color: rgb(15, 175, 238);
     padding: 10px;
     border-radius: 8px;
     border-bottom-right-radius: 2px;
@@ -149,7 +150,7 @@
 }
 
 .botText {
-    color: #000;
+    color:#333;
     font-family: Helvetica;
     font-weight: normal;
     font-size: 16px;

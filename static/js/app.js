@@ -122,7 +122,7 @@ function updateStats() {
 }
 
 // UPDATE CHART
-var yellowA = '#fae313'
+var yellowA = 'rgb(23, 81, 104)'
 var greenA = '#2aff2a'
 var redA = '#da2d2d'
 let my_chart

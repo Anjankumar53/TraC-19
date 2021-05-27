@@ -1,11 +1,12 @@
 :root {
-  --brand: rgb(238, 254, 21);
+  --brand: rgb(255, 146, 5);
   --greenA: #2aff2a;
   --redA: #da2d2d;
-  --bdDarkPrimary: rgb(16, 27, 39);
-  --bdDarkSecondary: rgb(36, 36, 36);
-  --textWhite:#fff;
-  --textDark:#333;
+  --bdDarkPrimary: rgb(255, 255, 255);
+  --orangeBg:rgb(255, 184, 51);
+  --bdDarkSecondary: #505050;
+  --textWhite:rgb(218, 218, 218);
+  --textDark:rgb(255, 255, 255);
 }
 @font-face {
   font-family: "Gilroy";
@@ -41,11 +42,11 @@ body {
 
 main {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4vh auto 0 auto ;
 }
 .stats {
   width: 100%;
-  background-color: var(--bdDarkPrimary);
+  background-color: #ccc;
   background-size: cover;
 }
 .latest-report {
@@ -57,7 +58,7 @@ main {
   margin: 0 auto;
   padding-top: 50px;
 
-  color: var(--textWhite);
+  color: #333;
 }
 
 .country,
@@ -103,7 +104,7 @@ main {
   width: 80%;
   height: 70vh;
   min-height: 500px;
-  background-color: var(--bdDarkSecondary);
+  background-color: var(--orangeBg);
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -231,6 +232,8 @@ main {
 /* Navbar container */
 .navbar {
   overflow: hidden;
+  margin-left: 0;
+  height:8vh;
   background-color: var(--bdDarkSecondary);
   font-family: Arial;
 }
@@ -239,38 +242,58 @@ main {
 .navbar a,#brand {
   float: right;
   margin-right: 3vw;
-  font-size: 16px;
+  height: 100%;
+  font-size: 25px;
+  font-style: 'Gilroy';
   color: var(--textWhite);
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
+}
+#logo{
+  float: left;
+
+  padding: 0;
+  margin-right: 0;
+  margin-top: 1vh;
+  margin-left: 0;
+}
+#logo:hover{
+  background-color: unset;
+}
+#logo img{
+  height: 5vh;
 }
 #brand {
   margin-left: 1vw;
   align-items: center;
-  width: 10vw;
+  width: 15vw;
   float: left;
   color: var(--bdDarkPrimary);
   background-color: var(--brand);
 }
 /* The dropdown container */
 .dropdown {
+  margin-left: 0;
   float: left;
+  padding: 0;
   overflow: hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropbtn {
   content: "|||";
       transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
-  font-size: 16px;
+  font-size: 22px;
+  width: 6vw;
+  height: 100%;
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
-  background-color: var(--bdDarkPrimary);
+  padding: 14px;
+  background-color: var(--bdDarkSecondary);
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 
@@ -286,7 +309,8 @@ main {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--bdDarkSecondary);
+  background-color: var(--bdDarkSecondary) ;
+
   min-width: 15vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -305,10 +329,37 @@ main {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: var(--brand);
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+
+
+
+.sumDiv{
+  background-image: url('https://image.freepik.com/free-photo/coronavirus-outbreak-pathogen-affecting-respiratory-tract-covid-19-infection-concept-pandemic-viral-infection-coronavirus-inside-human-viral-infection-3d-illustration_92790-195.jpg') ;
+  background-repeat: no-repeat;
+  background-size: 75vw;
+  filter: hue-rotate(200deg) ;
+  max-width: 75vw;
+  padding:8vh 3vw;
+  text-align: center;
+  color: #f1f1f1;
+  margin: 1vh auto;}
+.sumTitle{
+
+  margin-bottom: 6vh;
+  font-family:serif;
+  font-size: 4vw;
+}
+.Summary{
+  font-size:1.5vw ;
+  text-shadow: #333 1px 2px 5px;
+  margin-bottom: 8vh;
 }

@@ -93,9 +93,8 @@ function scam(){
         document.getElementById("fdata").innerHTML = temp;
     }
     else {
-        temp += "<tr>";
+        temp="<tr>"
         temp += "<td>" + "NO data"+ "</td>";
-        temp += "<td>" +"" + "</td>";
         document.getElementById("fdata").innerHTML = temp;
     }
 }
