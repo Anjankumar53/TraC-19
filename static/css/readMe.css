@@ -135,8 +135,12 @@
     font-weight: bolder;
 }
 #article_data{
-    font-size: 1.4vw;
+  min-height: 60vh;
+  max-width: 60w;
+    font-size: 1.6vw;
     padding: 2vw;
+    line-height: 200%;
+    background-color: #f1f1f1;
 }
 .topics button{
     background:var(--brand);
@@ -146,6 +150,6 @@
     border-radius: 10px;
     height:6vh;
     color: #f1f1f1;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 

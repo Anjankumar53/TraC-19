@@ -228,8 +228,8 @@ tr:nth-child(even){
     margin-top: 2vh;
   }
   #district_text{
-    width: 15vw;
-    font-size: 0.8vw;
+    min-width: 20vw;
+    font-size: 1.5vw;
     height: 4vh;
     margin-left: 4vw;
     margin-top: 4vh;
@@ -241,9 +241,9 @@ tr:nth-child(even){
   padding: 0;
 }
 .drop_down_states{
-  width: 15vw;
+  width: 20vw;
   height: 4vh;
-  font-size: 0.8vw;
+  font-size: 1.5vw;
 }
 #fdata{
   margin-bottom: 10vh;
