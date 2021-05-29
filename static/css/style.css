@@ -8,16 +8,13 @@
   --textWhite:rgb(218, 218, 218);
   --textDark:rgb(255, 255, 255);
 }
-@font-face {
-  font-family: "Gilroy";
-  src: url(./Gilroy-Regular.woff) format(woff);
-}
-
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+@font-face {font-family: "Gilroy"; src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot"); src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff") format("woff"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy") format("svg"); }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Gilroy", sans-serif;
+  font-family: "ISOCTEUR", sans-serif;
 }
 html {
   font-size: 16px;
