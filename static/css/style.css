@@ -1,13 +1,13 @@
 :root {
-  --brand: rgb(255, 146, 5);
+  --brand: rgb(206, 56, 56);
   --greenA: #2aff2a;
   --redA: #da2d2d;
   --bdDarkPrimary: rgb(255, 255, 255);
   --orangeBg:rgb(255, 184, 51);
   --bdDarkSecondary: #505050;
-  --textWhite:rgb(218, 218, 218);
+  --textWhite:#333;
   --textDark:rgb(255, 255, 255);
-}
+  }
 @import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
 @font-face {font-family: "Gilroy"; src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot"); src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff") format("woff"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy") format("svg"); }
 * {
@@ -16,17 +16,18 @@
   box-sizing: border-box;
   font-family: "ISOCTEUR", sans-serif;
 }
+
 html {
   font-size: 16px;
 }
 body {
-  background-color: var(--bdDarkPrimary);
+  background-color: #1E1E1E;
 }
 .hide {
   display: none;
 }
 .fadeIn {
-  animation: fade 0.5s ease-in-out;
+  animation: fade 1s ease-in-out;
 }
 @keyframes fade {
   0% {
@@ -43,7 +44,7 @@ main {
 }
 .stats {
   width: 100%;
-  background-color: #ccc;
+  background-color: #333;
   background-size: cover;
 }
 .latest-report {
@@ -64,15 +65,26 @@ main {
 .deaths {
   height: 100px;
 }
+.total-cases{
+  color: skyblue;
+}
+.recovered{
+  color: var(--greenA);
+}
+.deaths{
+  color: var(--redA);
+}
+
 
 .name {
   font-size: 2.2em;
-  color: var(--brand);
+  color: rgb(0, 156, 156);
   font-weight: bold;
 }
 
 .change-country {
   cursor: pointer;
+  color: rgb(0, 216, 216);
 }
 
 .title {
@@ -81,7 +93,7 @@ main {
 .total-cases .value {
   font-size: 2em;
   font-weight: bold;
-  color: var(--brand);
+  color:skyblue;
 }
 .recovered .value {
   font-size: 2em;
@@ -101,7 +113,7 @@ main {
   width: 80%;
   height: 70vh;
   min-height: 500px;
-  background-color: var(--orangeBg);
+  background-color: #111;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -120,10 +132,11 @@ main {
   width: 400px;
   height: 30px;
 
-  background-color: var(--bdDarkSecondary);
+  background-color: #333;
 
   z-index: 1;
 }
+
 .search-box input {
   width: 360px;
   height: 25px;
@@ -131,7 +144,7 @@ main {
   border: none;
 
   background-color: transparent;
-  color: var(--textWhite);
+  color: #f1f1f1;
 
   padding-left: 15px;
 
@@ -169,7 +182,8 @@ main {
   color: var(--textWhite);
 }
 .country-list ul li:hover {
-  border-left: 1px solid var(--textWhite);
+  border-left: 1px solid #f1f1f1;
+  background-color: #1E1E1E;
 }
 /* SCROLL BAR */
 .country-list::-webkit-scrollbar {
@@ -178,7 +192,7 @@ main {
 
 /* Track */
 .country-list::-webkit-scrollbar-track {
-  background: var(--bdDarkSecondary);
+  background: #333;
 }
 
 /* Handle */
@@ -230,8 +244,9 @@ main {
 .navbar {
   overflow: hidden;
   margin-left: 0;
+  padding-left: 0;
   height:8vh;
-  background-color: var(--bdDarkSecondary);
+  background:linear-gradient(#333,#555);
   font-family: Arial;
 }
 
@@ -252,8 +267,8 @@ main {
 
   padding: 0;
   margin-right: 0;
-  margin-top: 1vh;
-  margin-left: 0;
+  margin-top: 2vh;
+  margin-left: 1vw;
 }
 #logo:hover{
   background-color: unset;
@@ -262,13 +277,16 @@ main {
   height: 5vh;
 }
 #brand {
-  margin-left: 1vw;
+  margin-left: 0vw;
   align-items: center;
   width: 15vw;
+  font-weight: 900;
+  font-size: 3.5vh;
   float: left;
-  color: var(--bdDarkPrimary);
-  background-color: var(--brand);
-}
+  margin-top: 0;
+  color: #F1F1F1;
+  text-shadow: #1E1E1E 2px 2px 2px ;
+ }
 /* The dropdown container */
 .dropdown {
   margin-left: 0;
@@ -285,12 +303,13 @@ main {
       -webkit-transform: rotate(-90deg);
   font-size: 22px;
   width: 6vw;
-  height: 100%;
+  height:8vh;
   border: none;
   outline: none;
   color: white;
   padding: 14px;
-  background-color: var(--bdDarkSecondary);
+  background-color: rgb(206, 56, 56);
+
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 
@@ -298,7 +317,7 @@ main {
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: var(--brand);
+  background-color: rgb(138, 43, 43);
   color: var(--bdDarkPrimary)
 }
 
@@ -306,7 +325,7 @@ main {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--bdDarkSecondary) ;
+  background-color: #333 ;
 
   min-width: 15vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -326,7 +345,7 @@ main {
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: var(--brand);
+  background-color:rgb(206, 56, 56);
 }
 
 /* Show the dropdown menu on hover */
@@ -334,29 +353,31 @@ main {
   display: block;
 }
 
-
-
-
-
-
 .sumDiv{
   background-image: url('https://image.freepik.com/free-photo/coronavirus-outbreak-pathogen-affecting-respiratory-tract-covid-19-infection-concept-pandemic-viral-infection-coronavirus-inside-human-viral-infection-3d-illustration_92790-195.jpg') ;
   background-repeat: no-repeat;
-  background-size: 75vw;
-  filter: hue-rotate(200deg) ;
-  max-width: 75vw;
+  background-size: 90vw;
+  filter: hue-rotate(170deg) ;
+  max-width:90vw;
   padding:8vh 3vw;
   text-align: center;
-  color: #f1f1f1;
-  margin: 1vh auto;}
+  color: #1E1E1E;
+  margin: 2vh auto;}
 .sumTitle{
-
   margin-bottom: 6vh;
   font-family:serif;
+  text-shadow: #f1f1f1 2px  0 5px;
   font-size: 4vw;
+  background-color: white;
 }
 .Summary{
-  font-size:1.5vw ;
+  font-size:1.8vw ;
+  max-width: 75VW;
+  color: aliceblue;
   text-shadow: #333 1px 2px 5px;
   margin-bottom: 8vh;
+}
+
+#red{
+  color:rgb(206, 56, 56);
 }

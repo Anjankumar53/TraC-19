@@ -1,11 +1,13 @@
 :root {
-    --brand: rgb(255, 146, 5);
-    --bdDarkPrimary: rgb(255, 255, 255);
-    --orangeBg:rgb(255, 184, 51);
-    --bdDarkSecondary: #505050;
-    --textWhite:rgb(255, 255, 255);
-    --textDark:rgb(255, 255, 255);
-}
+  --brand: rgb(206, 56, 56);
+  --greenA: #2aff2a;
+  --redA: #da2d2d;
+  --bdDarkPrimary: rgb(255, 255, 255);
+  --orangeBg:rgb;
+  --bdDarkSecondary: #505050;
+  --textWhite:#f1f1f1;
+  --textDark:rgb(255, 255, 255);
+  }
 
 .chat-bar-collapsible {
     position: fixed;
@@ -17,7 +19,7 @@
 .collapsible {
     background-color: var(--brand);
     
-    color: rgb(82, 82, 82);
+    color: #f1f1f1;
 
     cursor: pointer;
     padding: 18px;
@@ -26,7 +28,7 @@
     outline: none;
     font-size: 18px;
     border-radius: 10px 10px 0 0;
-    border: 3px solid var(--textWhite);
+    border: 3px solid #f1f1f1;
     border-bottom: none;
 
 }
@@ -35,12 +37,12 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: var(--bdDarkSecondary);
+    background-color: #333;
 }
 
 .full-chat-block {
     width: 350px;
-    background: var(--bdDarkSecondary);
+    background: #333;
     text-align: center;
     overflow: auto;
     scrollbar-width: none;
@@ -91,7 +93,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    background-color: rgb(255, 170, 42);
+    background-color:rgb(206, 56, 56);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
 }
@@ -123,13 +125,14 @@
     border-radius: 10px;
     padding: 10px;
     font-size: 16px;
-    color: #000;
-    background-color: white;
+    font-weight: 600;
+    color: #f1f1f1;
+    background-color: #1e1e1e;
     outline: none
 }
 
 .userText {
-    color:#333;
+    color:#f1f1f1;
     font-family: Helvetica;
     font-size: 16px;
     font-weight: normal;
@@ -150,7 +153,7 @@
 }
 
 .botText {
-    color:#333;
+    color:#f1f1f1;
     font-family: Helvetica;
     font-weight: normal;
     font-size: 16px;
